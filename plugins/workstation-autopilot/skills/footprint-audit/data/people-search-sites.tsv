@@ -1,0 +1,24 @@
+# footprint-audit seed list — top people-search / data-broker sites.
+# SEED ONLY: opt-out URLs change often. Verify the current opt-out URL with a quick
+# search at run time before relying on it. Tab-separated: site / domain / opt_out_url / typically_exposes
+site	domain	opt_out_url	typically_exposes
+Whitepages	whitepages.com	https://www.whitepages.com/suppression-requests	address, phone, age, relatives
+Spokeo	spokeo.com	https://www.spokeo.com/optout	address, phone, email, relatives
+BeenVerified	beenverified.com	https://www.beenverified.com/app/optout/search	address, phone, relatives
+TruePeopleSearch	truepeoplesearch.com	https://www.truepeoplesearch.com/removal	address, phone, relatives
+FastPeopleSearch	fastpeoplesearch.com	https://www.fastpeoplesearch.com/removal	address, phone, relatives
+Radaris	radaris.com	https://radaris.com/control/privacy	address, phone, relatives, work
+Intelius	intelius.com	https://www.intelius.com/opt-out/	address, phone, age, relatives
+PeopleFinders	peoplefinders.com	https://www.peoplefinders.com/opt-out	address, phone, relatives
+MyLife	mylife.com	https://www.mylife.com/ccpa/index.pubview	address, age, "reputation score"
+InstantCheckmate	instantcheckmate.com	https://www.instantcheckmate.com/opt-out/	address, phone, records
+TruthFinder	truthfinder.com	https://www.truthfinder.com/opt-out/	address, phone, records
+PeekYou	peekyou.com	https://www.peekyou.com/about/contact/optout/	usernames, social, location
+USSearch	ussearch.com	https://www.ussearch.com/opt-out/	address, phone, age
+USPhonebook	usphonebook.com	https://www.usphonebook.com/opt-out	phone, address
+Nuwber	nuwber.com	https://nuwber.com/removal/link	address, phone, relatives
+CheckPeople	checkpeople.com	https://www.checkpeople.com/opt-out	address, phone, relatives
+Searchbug	searchbug.com	https://www.searchbug.com/tools/opt-out.aspx	address, phone
+Clustrmaps	clustrmaps.com	https://clustrmaps.com/bl/opt-out	address, residents
+ThatsThem	thatsthem.com	https://thatsthem.com/optout	address, phone, email, IP
+AdvancedBackgroundChecks	advancedbackgroundchecks.com	https://www.advancedbackgroundchecks.com/removal	address, phone, relatives

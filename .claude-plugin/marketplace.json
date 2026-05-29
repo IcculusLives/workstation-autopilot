@@ -3,12 +3,12 @@
   "owner": {
     "name": "Casey (Afters DJs)"
   },
-  "description": "Afters Tools — safe, reversible Mac automation. Keep your Mac fast and your files tidy, with nothing destructive and everything undoable.",
+  "description": "Afters Tools \u2014 safe, reversible Mac automation. Keep your Mac fast and your files tidy, with nothing destructive and everything undoable.",
   "plugins": [
     {
       "name": "workstation-autopilot",
       "source": "./plugins/workstation-autopilot",
-      "description": "Reports resource hogs and safely auto-cleans an allowlist (system tuning); auto-sorts Downloads & Desktop by file type with full undo (file organization). Safe-by-default and reversible.",
+      "description": "Keep a Mac fast and files tidy, and see where you're exposed online. mac-tuneup reports resource hogs and safely auto-cleans an allowlist; file-organizer auto-sorts Downloads & Desktop by type with full undo; footprint-audit gives a read-only report of your data-broker, search-engine, and breach exposure. Safe-by-default, reversible, report-first.",
       "license": "MIT",
       "category": "productivity",
       "keywords": [
