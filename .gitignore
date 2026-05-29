@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Local runtime data / logs (not part of the plugin)
+*.log
+mac-tuneup/
+snapshots/
+
+# Editor cruft
+.vscode/
+.idea/

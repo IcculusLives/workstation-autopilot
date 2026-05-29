@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  com.afters.tidy.plist : LaunchAgent that auto-sorts your files on a schedule.
+
+  It runs tidy.sh in sort mode every day at 4:00 AM, moving only files older
+  than 48 hours (so anything you touched recently stays put). Every run writes
+  an undo manifest, so a sort can always be reversed.
+
+  SETUP (one time):
+    1. Put the script at:   ~/bin/tidy.sh   then run:  chmod +x ~/bin/tidy.sh
+    2. Fill in your home path (run from the folder holding this file):
+         sed -i '' "s#REPLACE_WITH_HOME#$HOME#g" com.afters.tidy.plist
+    3. Install and load it:
+         cp com.afters.tidy.plist ~/Library/LaunchAgents/
+         launchctl unload ~/Library/LaunchAgents/com.afters.tidy.plist 2>/dev/null
+         launchctl load   ~/Library/LaunchAgents/com.afters.tidy.plist
+    4. To stop it later:
+         launchctl unload ~/Library/LaunchAgents/com.afters.tidy.plist
+
+  TUNE IT: change the Hour/Minute below to reschedule; change the "48" argument
+  to a different recent-file guard (in hours). To preview without moving, you
+  could instead point the argument at the plan flag, but the whole point of the
+  schedule is hands-free sorting, so sort mode is the default here.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.afters.tidy</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>REPLACE_WITH_HOME/bin/tidy.sh</string>
+        <string>--sort</string>
+        <string>--recent-hours</string>
+        <string>48</string>
+    </array>
+
+    <!-- Run every day at 4:00 AM local time. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>4</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- If the Mac was asleep at 4 AM, run shortly after it next wakes. -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <!-- Be a good citizen: lowest scheduling priority. -->
+    <key>Nice</key>
+    <integer>10</integer>
+    <key>ProcessType</key>
+    <string>Background</string>
+
+    <key>StandardOutPath</key>
+    <string>REPLACE_WITH_HOME/mac-tuneup/tidy.launchd.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>REPLACE_WITH_HOME/mac-tuneup/tidy.launchd.err.log</string>
+</dict>
+</plist>

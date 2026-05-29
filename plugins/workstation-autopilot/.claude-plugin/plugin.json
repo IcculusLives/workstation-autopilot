@@ -1,0 +1,17 @@
+{
+  "name": "workstation-autopilot",
+  "version": "0.1.0",
+  "description": "Keep a Mac fast and files tidy. Module 1 reports resource hogs and safely auto-cleans an allowlist; Module 2 auto-sorts Downloads & Desktop by type with full undo. Safe-by-default, reversible automation.",
+  "author": {
+    "name": "Casey"
+  },
+  "license": "MIT",
+  "keywords": [
+    "macos",
+    "performance",
+    "cleanup",
+    "file-organization",
+    "automation",
+    "productivity"
+  ]
+}
