@@ -1,7 +1,7 @@
 {
   "name": "workstation-autopilot",
-  "version": "0.2.0",
-  "description": "Keep a Mac fast and files tidy, and see where you're exposed online. mac-tuneup reports resource hogs and safely auto-cleans an allowlist; file-organizer auto-sorts Downloads & Desktop by type with full undo; footprint-audit gives a read-only report of your data-broker, search-engine, and breach exposure. Safe-by-default, reversible, report-first.",
+  "version": "0.3.0",
+  "description": "Keep a Mac fast and files tidy, and track where you're exposed online. mac-tuneup reports resource hogs and safely auto-cleans an allowlist; file-organizer auto-sorts Downloads & Desktop by type with full undo; footprint-audit reports your data-broker, search-engine, and breach exposure; footprint-digest re-scans on a schedule and flags what came back. Safe-by-default, reversible, report-first.",
   "author": {
     "name": "Casey"
   },
